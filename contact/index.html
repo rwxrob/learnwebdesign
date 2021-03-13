@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <main>
+      <h1>Contact Us</h1>
+      <p>Let us know about you.</p>
+
+      <form method="POST"> <!--enctype="multipart/form-data" -->
+        <p>
+        <select size=8 multiple name="selected">
+          <optgroup label=Cardinal>
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+          </optgroup>
+          <optgroup label=Roman>
+          <option>I</option>
+          <option>II</option>
+          <option>III</option>
+          </optgroup>
+        </select>
+        </p>
+        <p><input type="hidden" name="testanswer" value="super secret answer"></p>
+        <p><input type="password" name="mypass"></p>
+
+        <p><label>Unchangable: <input type="text" name="hehe" readonly value="You Can't Change Me"></label></p>
+
+        <p><input type="text" name="name" placeholder="Name"></p>
+        <p><input type="email" name="email" placeholder="Email"></p>
+        <p><input type="number" name="numberofcrayons" step max=12></p>
+        <p><input type="date" name="bday"></p>
+        <p><textarea name="sometext" placeholder='Enter something' disabled></textarea></p>
+
+				<input type=checkbox id="likes-clickable-things">Likes Clickable</li>
+
+      <div role="textarea" id="divinform" style="width: 400px; height: 200px; background: cyan; color: goldenrod;" contenteditable>something</div>
+
+        <fieldset id=clickables>
+				<legend>Legendary Clickable Things</legend>
+        <p>
+        <input text=cardinal list="adatalist" autocomplete="on" >
+        <datalist id=adatalist name="selected" autocomplete>
+          <option value="one">
+          <option value="two">
+          <option value="three">
+        </datalist>
+        </p>
+
+        <p>
+        <ul class=checkboxes>
+          <li><input type=checkbox name=shell value=bash checked>bash</li>
+          <li><label><input type=checkbox name=shell value=zsh>zsh</label></li>
+          <li><input type=checkbox name=shell value=csh>csh</li>
+          <li><input type=checkbox name=shell value=csh>tcsh</li>
+          <li><input type=checkbox name=shell value=csh>fish</li>
+        </ul>
+        </p>
+				</fieldset>
+
+        <p>
+        <ul class=radiobuttons>
+          <li><input type=radio name=shell value=bash checked>bash</li>
+          <li><input type=radio name=shell value=zsh>zsh</li>
+          <li><input type=radio name=shell value=csh>csh</li>
+          <li><input type=radio name=shell value=csh>tcsh</li>
+          <li><input type=radio name=shell value=csh>fish</li>
+        </ul>
+        </p>
+
+        <input type="file" name=myfile>
+
+        <input type="range" name=myrange>
+
+        <input type="color" name=mycolor><br>
+
+
+        <p><input type="submit"></p>
+        <p><input type="reset"></p>
+      </form>
+
+<p>Calculate the sum by adding these two numbers together:</p>
+
+ <form oninput="x.value=parseInt(a.value)+parseInt(b.value); v.value=x.value">
+        <meter value="70" id=v min="0" low=20 high=40 optimum=30 max="100" name="volume">Some Number</meter>
+  <input type="range" id="a" value="50">
+  +<input type="number" id="b" value="25">
+  =<output name="x" for="a b">
+</output>
+</form> 
+
+    </main>
+    <script src="/assets/main.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>

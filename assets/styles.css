@@ -1,0 +1,57 @@
+/* * {margin: 0; padding: 0} */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body, html {
+  background: #104410;
+  color: #ffcf41;
+  font-size: 100%;
+  font-family: "Fira Sans",serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.checkboxes,.radiobuttons {
+  list-style-type: none;
+}
+
+td, th {
+  border: 1px aliceblue solid ;
+}
+
+svg rect {
+  fill: cyan;
+}
+
+ol {
+    list-style-type: cjk-earthly-branch;
+}
+
+.underlineme {
+  text-decoration: underline;
+}
+
+.pink {
+  color: pink;
+}
+
+#thisone {
+  font-size: 2em;
+}
+
+a {
+  color: silver;
+}
+
+.justadiv {
+  height: 3rem;
+  width: 3rem;
+  background: charteus;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
